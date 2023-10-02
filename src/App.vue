@@ -1,6 +1,6 @@
 <template>
   <FortuneWheel
-      style="width: 500px"
+      style="width: 500px;"
       :canvas="canvasOptions"
       :prizes="prizes"
       :verify="cavansVerify"
@@ -24,44 +24,62 @@ export default {
     return {
       cavansVerify: true, // Whether the turntable in canvas mode is enabled for verification
       canvasOptions: {
-        borderWidth: 1,
-        borderColor: '#584b43'
+        borderWidth: 0.5,
+        borderColor: '#ffe700'
       },
       prizes: [
         {
           id: 1, //* The unique id of each prize, an integer greater than 0
-          name: 'Subscription coupon', // Prize name, display value when type is canvas (this parameter is not needed when type is image)
-          value: 'Subscription coupon', //* Prize value, return value after spinning
-          bgColor: '#45ace9', // Background color (no need for this parameter when type is image)
-          color: '#ffffff', // Font color (this parameter is not required when type is image)
-          probability: 30, //* Probability, up to 4 decimal places (the sum of the probabilities of all prizes
+          name: 'Free 1 month \nSubscription', // Prize name, display value when type is canvas (this parameter is not needed when type is image)
+          value: 'Free 1 month Subscription', //* Prize value, return value after spinning
+          bgColor: '#42d70d', // Background color (no need for this parameter when type is image)
+          color: '#000000', // Font color (this parameter is not required when type is image)
+          probability: 20, //* Probability, up to 4 decimal places (the sum of the probabilities of all prizes
           weight: 1 // Weight, if useWeight is true, the probability is calculated by weight (weight must be an integer), so probability is invalid
         },
         {
           id: 2,
-          name: 'GHS2,000.00',
-          value: 'GHS2,000.00',
-          bgColor: '#dd3832',
+          name: 'GHS100 \n in Wallet',
+          value: 'GHS1000',
+          bgColor: '#3f057e',
           color: '#ffffff',
-          probability: 40,
-          weight: 1
+          probability: 5,
+          weight: 0.5
         },
         {
           id: 3,
-          name: 'T-Shirt',
-          value: 'T-Shirt',
+          name: 'Built \nT-Shirt',
+          value: 'Shirt',
           bgColor: '#fef151',
-          color: '#ffffff',
-          probability: 20,
+          color: '#000000',
+          probability: 10,
           weight: 1
         },
         {
           id: 4,
-          name: 'Umbrella',
+          name: 'Branded \n Umbrella',
           value: 'Umbrella',
+          bgColor: '#032f83',
+          color: 'white',
+          probability: 10,
+          weight: 1
+        },
+   {
+          id: 5,
+          name: 'Free \nInsurance',
+          value: 'Free keyman insurance',
           bgColor: '#ff8d00',
           color: 'black',
-          probability: 10,
+          probability: 20,
+          weight: 1
+        },
+  {
+          id: 6,
+          name: 'No Luck',
+          value: 'Nothing',
+          bgColor: '#000000',
+          color: 'white',
+          probability: 35,
           weight: 1
         }
 
