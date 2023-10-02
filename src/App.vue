@@ -30,8 +30,8 @@ export default {
       prizes: [
         {
           id: 1, //* The unique id of each prize, an integer greater than 0
-          name: 'Blue', // Prize name, display value when type is canvas (this parameter is not needed when type is image)
-          value: 'Blue\'s value', //* Prize value, return value after spinning
+          name: 'Subscription coupon', // Prize name, display value when type is canvas (this parameter is not needed when type is image)
+          value: 'Subscription coupon', //* Prize value, return value after spinning
           bgColor: '#45ace9', // Background color (no need for this parameter when type is image)
           color: '#ffffff', // Font color (this parameter is not required when type is image)
           probability: 30, //* Probability, up to 4 decimal places (the sum of the probabilities of all prizes
@@ -39,8 +39,8 @@ export default {
         },
         {
           id: 2,
-          name: 'Red',
-          value: 'Red\'s value',
+          name: 'GHS2,000.00',
+          value: 'GHS2,000.00',
           bgColor: '#dd3832',
           color: '#ffffff',
           probability: 40,
@@ -48,8 +48,8 @@ export default {
         },
         {
           id: 3,
-          name: 'Yellow',
-          value: 'Yellow\'s value',
+          name: 'T-Shirt',
+          value: 'T-Shirt',
           bgColor: '#fef151',
           color: '#ffffff',
           probability: 20,
@@ -57,8 +57,8 @@ export default {
         },
         {
           id: 4,
-          name: 'orange',
-          value: 'blue\'s value',
+          name: 'Umbrella',
+          value: 'Umbrella',
           bgColor: '#ff8d00',
           color: 'black',
           probability: 10,
